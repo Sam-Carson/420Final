@@ -1,0 +1,132 @@
+﻿
+/*
+Base Fonts
+h1 : font-family: 'Roboto Mono', monospace;
+h2 : font-family: 'Open Sans', sans-serif;
+p  : font-family: 'Montserrat', sans-serif;
+Base Colors
+*/
+
+body {
+    background-image: url(../Content/Img/galaxy-3608029_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    overflow: hidden;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dashboard {
+    width: 90vw;
+    height: 85vh;
+    overflow: hidden;
+    margin: 5% auto;
+    background: rgba(220, 220, 220, 0.1);
+    border-radius: 3em;
+    z-index: 1;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.header-container {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Roboto Mono", monospace;
+    color: whitesmoke;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    color: whitesmoke;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    justify-content: inherit;
+    margin: 2rem;
+    height: 83%;
+    overflow: hidden;
+}
+
+.grid-item {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    background: rgba(200, 200, 200, 0.1);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.subject-header {
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+
+.subject-description {
+    text-align: left;
+    margin: 1em 2em;
+    font-size: 0.8em;
+}
+
+.date-picker-container {
+    display: inline-block;
+}
+
+.select-date-text {
+    margin: 0;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+input {
+    margin: 0;
+    display: inline-block;
+}
+
+.table-container {
+    margin-top: 1em;
+}
+
+th,
+td {
+    color: whitesmoke;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+tr {
+    background: rgba(200, 200, 200, 0.6);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}

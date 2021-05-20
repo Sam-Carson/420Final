@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Observatory</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Content/Site.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header-container">
+            <h1>Earth Observatory</h1>
+            <h2>NEO's and Metorites Public Database</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p class="subject-header">NEO's</p>
+                <p class="subject-description">
+                    NEO's (Near Earth Objects) are asteriods and comets that have been directed towards Earth by our neighboring planet's
+                    gravitational force. NEO's do not enter the Earth's atmoshpere, however, if one were too, it would become a Metorite. 
+                    Tracking NEO's is an important task to ensure the safey of all live on Earth.
+                </p>
+                <div class="date-picker-container">
+                    <p class="select-date-text">Select a Date: </p>
+                    <input type="date" id="start" name="trip-start" value="2021-05-20" min="2018-01-01" max="2021-05-20">
+                </div>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Designation</th>
+                            <th>Size (aU)</th>
+                            <th>Proximity</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>193-UYZ</td>
+                            <td>50</td>
+                            <td>0.008 au</td>
+                            <td>08/27/1995</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="grid-item">
+                <p class="subject-header">Metorites</p>
+                <p class="subject-description">
+                    Metorites are asteriods or comets that have entered the Earth's atmosphere. The majority of Metorites
+                    burn up when entering the atmoshpere but a few manage to make it to the Earth's surface. Most Metorites are considered Micrometeorites and tend to be dust particles or very small in size.
+                </p>
+                <div class="date-picker-container">
+                    <p class="select-date-text">Select a Date: </p>
+                    <input type="date" id="start" name="trip-start" value="2021-05-20" min="2018-01-01" max="2021-05-20">
+                </div>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Designation</th>
+                            <th>Size (aU)</th>
+                            <th>Destination</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>193-UYZ</td>
+                            <td>50</td>
+                            <td>Moscow, Russia</td>
+                            <td>08/27/1995</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
