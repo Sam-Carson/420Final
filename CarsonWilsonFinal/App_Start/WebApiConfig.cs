@@ -13,6 +13,7 @@ namespace CarsonWilsonFinal
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            config.Routes.Clear();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

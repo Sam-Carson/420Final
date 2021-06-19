@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth Observatory</title>
+    <title>Night Sky Observatory</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Content/Site.css">
@@ -12,21 +12,18 @@
 <body>
     <div class="dashboard">
         <div class="header-container">
-            <h1>Earth Observatory</h1>
-            <h2>NEO's and Metorites Public Database</h2>
+            <h1>Night Sky Observatory</h1>
+            <h2>UFO's and Metorites Public Database</h2>
         </div>
         <div class="grid-container">
-            <div class="grid-item">
-                <p class="subject-header">NEO's</p>
+            <div class="grid-item-1">
+                <p class="subject-header">UFO's</p>
                 <p class="subject-description">
-                    NEO's (Near Earth Objects) are asteriods and comets that have been directed towards Earth by our neighboring planet's
-                    gravitational force. NEO's do not enter the Earth's atmoshpere, however, if one were too, it would become a Metorite. 
-                    Tracking NEO's is an important task to ensure the safey of all live on Earth.
+                    UFO's (Unidentified Flying Objects) are objects in the sky that are unidentifiable. Many viewers who witness UFO's tend to believe they are from an extraterrestrial world.
+                    Over the previous year, governments from around the world have been releasing videos and documents that have highlighted the possibility of alien life visiting Earth.
                 </p>
-                <div class="date-picker-container">
-                    <p class="select-date-text">Select a Date: </p>
-                    <input type="date" id="start" name="trip-start" value="2021-05-20" min="2018-01-01" max="2021-05-20">
-                </div>
+                <select name="state" class="form-control" id="ufoState"></select>
+                <input type="button" value="View Data" class="btn btn-primary" onclick="GetUFOs()" />
                 <div class="table-container">
                     <table>
                         <tr>
@@ -44,16 +41,14 @@
                     </table>
                 </div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item-2">
                 <p class="subject-header">Metorites</p>
                 <p class="subject-description">
                     Metorites are asteriods or comets that have entered the Earth's atmosphere. The majority of Metorites
                     burn up when entering the atmoshpere but a few manage to make it to the Earth's surface. Most Metorites are considered Micrometeorites and tend to be dust particles or very small in size.
                 </p>
-                <div class="date-picker-container">
-                    <p class="select-date-text">Select a Date: </p>
-                    <input type="date" id="start" name="trip-start" value="2021-05-20" min="2018-01-01" max="2021-05-20">
-                </div>
+                <select name="classification" class="form-control" id="metClassification"></select>
+                <input type="button" value="View Data" class="btn btn-primary" onclick="GetMeteorites()" />
                 <div class="table-container">
                     <table>
                         <tr>
@@ -70,10 +65,19 @@
                         </tr>
                     </table>
                 </div>
-
+            </div>
+            <div class="grid-item-3">
+                <p class="subject-header">Compare By Year</p>
+                <p class="subject-description" id="year-description">
+                    Curios about how many UFO sightings and Meteorites there were in a given year?
+                    Select a year in the menu and see how UFO sightings and Meteorites stack up. Year range: 1969-1999
+                </p>
+                <select name="year" class="form-control" id="yearSelect"></select>
+                <input type="button" value="View Data" class="btn btn-primary" onclick="GetYearComparison()" />
             </div>
         </div>
     </div>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
-
 </html>
